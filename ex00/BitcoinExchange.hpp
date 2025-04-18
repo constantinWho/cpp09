@@ -22,6 +22,9 @@ class BitcoinExchange {
 
 		void	loadDB(const std::string& db);
 		void	processInput(const std::string& input);
+		bool	isValidDate(const std::string& date);
+		bool	isValidValue(const std::string& valueStr, float& value);
+
 };
 
 #endif
